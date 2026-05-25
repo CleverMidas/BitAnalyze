@@ -1,0 +1,28 @@
+{
+  "name": "@bitanalyze/db",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    "./client": "./dist/src/client.js",
+    "./schema": "./dist/src/schema.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc --noEmit",
+    "migrate": "tsx src/migrate.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.7",
+    "postgres": "^3.4.7",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "drizzle-kit": "^0.31.7"
+    ,
+    "tsx": "^4.20.6"
+  }
+}

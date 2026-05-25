@@ -1,0 +1,24 @@
+{
+  "name": "@bitanalyze/indexer",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/main.ts",
+    "lint": "tsc --noEmit",
+    "start": "node dist/apps/indexer/src/main.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@bitanalyze/db": "workspace:*",
+    "@polkadot/api": "^16.4.8",
+    "drizzle-orm": "^0.44.7",
+    "dotenv": "^17.2.3",
+    "pino": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "pino-pretty": "^13.1.2",
+    "tsx": "^4.20.6"
+  }
+}
