@@ -5,7 +5,8 @@
   "packageManager": "pnpm@10.22.0",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "dev": "node scripts/dev-platform.mjs",
+    "dev:apps": "turbo run dev --parallel",
     "db:migrate": "pnpm --filter @bitanalyze/db migrate",
     "lint": "turbo run lint",
     "test": "turbo run test",
