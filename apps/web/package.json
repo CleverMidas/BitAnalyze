@@ -6,7 +6,7 @@
     "build": "next build",
     "dev": "next dev --port 3000",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.90.10",
@@ -25,4 +25,3 @@
     "tailwindcss": "^3.4.18"
   }
 }
-
